@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.5)
+project(examples)
+include_directories(../dspLib)
+add_subdirectory(../dspLib dspLib)
+add_executable(main ./1_SineWaves/main.cpp)
+target_link_libraries(main dspLib)
